@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginjpg">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewProspectors"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Prospector Details"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-1dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="10sp"
+        android:layout_margin="5dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:padding="10sp"
+        android:layout_margin="5dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="260dp" />
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Contact"/>
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_margin="5dp"
+        android:textSize="15dp"/>
+
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Occupation"
+        android:padding="10sp"
+        android:layout_margin="5dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="201dp" />
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorDOB"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Of Birth"
+
+        />
+    <EditText
+        android:editable="false"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dependents"
+        android:id="@+id/prospectorDependents"/>
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorIncome"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Income"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:editable="false"
+            android:id="@+id/prospectorADate"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Appointment Date"
+            android:maxLength="20"
+            />
+        <EditText
+            android:editable="false"
+            android:id="@+id/prospectorATime"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Appointment Time"
+            />
+    </LinearLayout>
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorAAddress"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Address"
+        android:maxLength="30"
+        />
+    <EditText
+        android:editable="false"
+        android:id="@+id/prospectorRemarks"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Remarks"
+        android:maxLength="50"
+        />
+
+
+
+
+
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:adSize="SMART_BANNER"-->
+<!--        app:adUnitId="ca-app-pub-1069698192639340/4512509788"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0"></com.google.android.gms.ads.AdView>-->
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "177768823050",
+    "firebase_url": "https://customer-base-information.firebaseio.com",
+    "project_id": "customer-base-information",
+    "storage_bucket": "customer-base-information.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177768823050:android:0f156ae7b9dfd2951322f3",
+        "android_client_info": {
+          "package_name": "com.kavinda.customerbaseapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177768823050-tk3ad9lbeeahp1bklrn1bsk2gadi5bm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ni0BuiR3AInwrndRlQXIj3bC3cDOIqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177768823050-tk3ad9lbeeahp1bklrn1bsk2gadi5bm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177768823050:android:5845b046401441031322f3",
+        "android_client_info": {
+          "package_name": "com.kavinda.customerbaseinformation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177768823050-tk3ad9lbeeahp1bklrn1bsk2gadi5bm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ni0BuiR3AInwrndRlQXIj3bC3cDOIqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177768823050-tk3ad9lbeeahp1bklrn1bsk2gadi5bm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

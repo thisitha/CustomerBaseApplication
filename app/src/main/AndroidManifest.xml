@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kavinda.customerbaseapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/last2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/last2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CustomerBaseApplication.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".registerUser"></activity>
+        <activity android:name=".ChatbotActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1069698192639340~6685578688" />
+
+        <activity
+            android:name=".upcomingCustomerBirthdays"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".ViewAllProspectors"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".ViewAllCustomers"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".ManagerViewProspector"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".ManagerViewCustomer"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".clientEditProfile"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".ViewPaymentHistory"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".prospectorDetails"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar">
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        </activity>
+        <activity
+            android:name=".customerDetails"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".viewCustomers"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".viewProspectors"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".salesManagerDashboard"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".addSalesManager"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".addCustomer"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".addProspector"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".addUser"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".clientDashboard"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".managerDashboard"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.CustomerBaseApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

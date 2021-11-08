@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginjpg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".addCustomer">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Enter Customer Details"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-1dp" />
+
+
+
+        <EditText
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Name"
+            android:padding="10sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+        <EditText
+            android:id="@+id/customerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Address"
+            android:padding="10sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <EditText
+            android:id="@+id/customerContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Contact"
+            android:inputType="number"/>
+
+        <EditText
+            android:editable="false"
+            android:id="@+id/customerDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Date" />
+
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:id="@+id/customerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Identity Card Number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:id="@+id/radioCustomerGender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioCustomerMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioCustomerFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:checked="false"
+                android:text="Female" />
+        </RadioGroup>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Civil Status"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:id="@+id/radioCustomerCivil"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioCustomerMarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:text="Married" />
+
+            <RadioButton
+                android:id="@+id/radioCustomerSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:checked="false"
+                android:text="Single" />
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/customerOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Occupation"
+            android:padding="10sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <EditText
+            android:id="@+id/customerDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Date Of Birth"
+            android:editable="false"
+
+            />
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerCustomerDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+
+        <EditText
+
+            android:id="@+id/customerSpouseDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Spouse Date Of Birth"
+            android:editable="false"/>
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerSpouceDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+
+
+        <EditText
+            android:id="@+id/customerIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Income"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Childern"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+
+            android:id="@+id/child1DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Child 1 Birthday"
+            android:editable="false"/>
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerChild1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <EditText
+
+            android:id="@+id/child2DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Child 2 Birthday" />
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerChild2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <EditText
+
+            android:id="@+id/child3DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Child 3 Birthday" />
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerChild13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <EditText
+
+            android:id="@+id/child4DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Child 4 Birthday" />
+        <DatePicker
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/datePickerChild14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Policy Details"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/customerPolicyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Policy Name" />
+
+        <EditText
+
+            android:id="@+id/customerPolicyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Policy Number"
+            android:inputType="number"/>
+
+        <EditText
+
+            android:id="@+id/customerPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Premium Amount"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Mode"
+            android:textStyle="bold"
+            android:textSize="20dp"
+             />
+
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:id="@+id/radiocustomerMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioModeMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:checked="true"
+                android:text="Monthly" />
+
+            <RadioButton
+                android:id="@+id/radioModeQuartely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:checked="false"
+                android:text="Quartaly" />
+            <RadioButton
+                android:id="@+id/radioModeBiAnnually"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:checked="false"
+                android:text="Bi-Anually" />
+            <RadioButton
+                android:id="@+id/radioModeAnnually"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:checked="false"
+                android:text="Annually" />
+        </RadioGroup>
+
+        <EditText
+
+            android:id="@+id/customerTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Term/Duration" />
+
+        <EditText
+
+            android:id="@+id/customerExpiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:hint="Expiary" />
+
+
+        <ProgressBar
+            android:id="@+id/progressAddCustomer"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/customerRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Remarks"
+            android:maxLength="50" />
+
+<!--        <com.google.android.gms.ads.AdView-->
+<!--            android:id="@+id/adView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            app:adSize="SMART_BANNER"-->
+<!--            app:adUnitId="ca-app-pub-1069698192639340/7138673120"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="1.0"></com.google.android.gms.ads.AdView>-->
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:onClick="registerCustomer"
+            android:textAlignment="center"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/offlogo_foreground"
+            app:layout_constraintBottom_toTopOf="@+id/loginProgress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.726" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
